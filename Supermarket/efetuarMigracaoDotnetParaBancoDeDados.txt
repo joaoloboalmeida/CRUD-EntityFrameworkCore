@@ -1,0 +1,17 @@
+Para criar uma migração do EF para o banco de dados executar os 
+seguintes comandos (CRIAR UM BANCO PELO C#):
+ - dotnet ef (para verificar se a ferramenta está instalada)
+ - dotnet tool install --global dotnet-ef (se a ferramenta 
+	não estiver instalada)
+ - dotnet clean
+ - dotnet build
+ - dotnet ef migrations add NomeQueQuiser
+ - dotnet ef database update (se quiser verificar se a base está 
+atualizada)
+
+
+ATUALIZAR A BASE DE DADOS:
+ - dotnet ef migrations add NomeQualquer
+
+GERAR O SCRIPT DE MIGRAÇÃO DO BANCO (caso queira):
+ - dotnet ef migrations script -o ./script.sql
